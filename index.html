@@ -1,15 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página web</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Estilos generales */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    }
+
+    h1 {
+    color: #333;
+    }
+
+    p {
+    color: #666;
+    }
+
+    img {
+      width: 150px; /* Ancho deseado de la imagen */
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    /* Estilos de la barra de navegación */
+    nav {
+    background-color: #AEC6CF;
+    padding: 10px;
+    }
+
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    nav ul li {
+    display: inline;
+    margin-right: 10px;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: #333;
+    }
+
+    nav ul li a:hover {
+    color: #ff0000;
+    }
+
+    /* Estilos de las secciones */
+    section {
+    margin-bottom: 40px;
+    background-color: #B5D2FF;
+    padding: 20px;
+    }
+
+    section#inicio {
+    background-color: #B5D2FF;
+    }
+
+    section#sobre-mi {
+    background-color: #F0FFFF;
+    }
+
+    section#proyectos {
+    background-color: #A7C6FF;
+    }
+
+    section#contacto {
+    background-color: #D4E8FF;
+    }
+
+    h2 {
+    color: #333;
+    margin-bottom: 10px;
+    }
+
+    /* Estilos del footer */
+    footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #FFD1DC;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a mi página web</h1>
-  <p>Este es un ejemplo básico de HTML y CSS trabajando juntos.</p>
-  <div class="caja">
-    <p>¡Este es un elemento dentro de una caja con estilos CSS!</p>
-  </div>
+  <header>
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio">
+    <h1>Mi Nombre</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>¡Bienvenido a mi portafolio!</h2>
+    <p>En esta página encontrarás información sobre mí y mis proyectos.</p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Diseñador industrial y programador web apasionado por crear soluciones digitales atractivas y funcionales.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+      <li>Proyecto 1</li>
+      <li>Proyecto 2</li>
+      <li>Proyecto 3</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¡Me encantaría escuchar tus comentarios y oportunidades de colaboración! Puedes contactarme a través de [correo electrónico] o mis perfiles en las redes sociales.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Mi Portafolio Personal. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
 
