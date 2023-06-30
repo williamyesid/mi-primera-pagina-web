@@ -8,6 +8,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 20px;
+        background-color: #FFE79B;
     }
 
     h1 {
@@ -37,25 +38,18 @@
 
     header {
       text-align: center; /* Centra horizontalmente el contenido */
-      background-color: #f2f2f2;
+      background-color: #393E46;
       padding: 20px;
-    }
-
-    img {
-      width: 150px; /* Ancho deseado de la imagen */
-      height: 150px;
-      border-radius: 50%;
-      display: block; /* Para alinear la imagen en el centro */
-      margin: 0 auto;
     }
 
     /* Estilos de la barra de navegación */
     nav {
-        background-color: #AEC6CF;
+        background-color: #222831;
         padding: 10px;
     }
 
     nav ul {
+        text-align: right; /* Alinea el contenido a la derecha */
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -68,34 +62,98 @@
 
     nav ul li a {
         text-decoration: none;
-        color: #333;
+        color: #ffffff;
     }
 
     nav ul li a:hover {
-        color: #ff0000;
+        color: #1675b0;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .nav-left a {
+      text-decoration: none;
+      color: #ffffff;
+      margin-right: 10px;
     }
 
     /* Estilos de las secciones */
     section {
-        background-color: #B5D2FF;
+        background-color: #000000;
         padding: 20px;
     }
 
     section#inicio {
-        background-color: #188690;
+        background-color: #222831;
         text-align: center;
+    }
+    
+    section#inicio img {
+      width: 150px; /* Ancho deseado de la imagen */
+      height: 150px;
+      border-radius: 50%;
+      display: block; /* Para alinear la imagen en el centro */
+      margin: 0 auto;
+    }
+    
+    section#inicio h2{
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Bacasime Antique', serif;
+        margin: 0;
+        font-size: 36px;
     }
 
     section#sobre-mi {
-        background-color: #F0FFFF;
+        background-color: #ffffff;
+        text-align: justify;
+        min-width: 200px;
+    }
+    
+    #sobre-mi p {
+      text-align: center;
+      min-width: 200px;
+    }
+
+    #sobre-mi ul {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    #sobre-mi ul.nav-left {
+      justify-content: flex-start;
+    }
+
+    section#habilidades {
+        background-color: #222831;
+        color: #ffffff;
+    }
+    section#habilidades h2 {
+        color: #ffffff;
+    }
+
+    #habilidades li img {
+      width: 500px; /* Ancho deseado de la imagen */
+      height: 500px;
+      display: block; /* Para alinear la imagen en el centro */
+      margin: 0 auto;
     }
 
     section#proyectos {
-        background-color: #A7C6FF;
+        background-color: #ffffff;
     }
 
     section#contacto {
-        background-color: #D4E8FF;
+        background-color: #222831;
+    }
+
+    section#contacto h2 {
+        background-color: #222831;
+        color: #ffffff;
     }
 
     h2 {
@@ -108,7 +166,7 @@
         text-align: center;
         margin-top: 40px;
         padding: 10px;
-        background-color: #FFD1DC;
+        background-color: #0d0d0d;
     }
 
   </style>
@@ -127,8 +185,8 @@
 
   <section id="inicio">
     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Logo del portafolio">
-    <h2>¡Bienvenido a mi portafolio!</h2>
-    <p>En esta página encontrarás información sobre mí y mis proyectos.</p>
+    <h2>WILLIAM ESPINOSA</h2>
+    <p>website.</p>
     <ul>
         <li><a href="https://www.twitter.com/tu_usuario_twitter" target="_blank">Twitter</a></li>
         <li><a href="https://www.linkedin.com/in/tu_perfil_linkedin" target="_blank">LinkedIn</a></li>
@@ -138,7 +196,35 @@
 
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
-    <p>Diseñador industrial y programador web apasionado por crear soluciones digitales atractivas y funcionales.</p>
+    <ul>
+      <li>Soy un diseñador industrial y programador web con habilidades en SolidWorks, Google SketchUp, HTML, JavaScript, Bootstrap y CSS. Mi enfoque se centra en crear productos con interfaces de usuario atractivas y eficientes, combinando diseño industrial y desarrollo web para brindar experiencias satisfactorias al usuario.</li>
+    </ul>
+  </section>
+
+  <!-- Resto del contenido de la página -->
+
+</body>
+</html>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="Icono de HTML" style="width: 100px; height: 100px;">
+        HTML</li>
+      <li>
+        <img src="https://www.pngrepo.com/png/303263/512/css3-logo.png" alt="Icono de HTML" style="width: 110px; height: 110px;">
+        CSS</li>
+      <li>
+        <img src="https://apexensino.com.br/wp-content/uploads/2017/11/js3.png" style="width: 100px; height: 105px;">
+        JavaScript</li>
+      <li>
+        <img src="https://www.ictdemy.com/images/5728/nodejs_logo.png" style="width: 100px; height: 100px;">
+        Node.js</li>
+      <li>
+          <img src="https://res.cloudinary.com/academind-gmbh/image/upload/f_auto,q_auto:eco/dpr_2.0,w_400,c_limit,g_center/v1/academind.com/content/tutorials/react-native-vs-flutter-vs-ionic-vs-nativescript-vs-pwa/react-native-logo" style="width: 110px; height: 100px;">
+        React</li>
+    </ul>
   </section>
 
   <section id="proyectos">
